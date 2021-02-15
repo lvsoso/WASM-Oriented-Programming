@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emscripten:Implement C API in JS</title>
+</head>
+<body>
+    <script src="capi_js.js"></script>
+    <script>
+        Module = {};
+        Module.onRuntimeInitialized = function() {
+          Module._print_the_answer();
+        }
+        </script>
+        
+</body>
+</html>
